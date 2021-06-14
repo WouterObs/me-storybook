@@ -1,14 +1,15 @@
-import styled, { StyledComponent } from 'styled-components';
+import styled, { StyledComponent } from "styled-components";
 
-export const StyledButton: StyledComponent<"button", any, {}, never> = styled.button({
-  // background: 'white',
-  fontWeight: 'bold',
-  border: '0',
-  borderRadius: '3em',
-  cursor: 'pointer',
-  display: 'inline-block',
-  lineHeight: '1'
-});
+export const StyledButton: StyledComponent<"button", any, {}, never> =
+	styled.button({
+		// background: 'white',
+		fontWeight: "bold",
+		border: "0",
+		borderRadius: "3em",
+		cursor: "pointer",
+		display: "inline-block",
+		lineHeight: "1",
+	});
 
 // const StyledSVG: StyledComponent<"svg", any, {}, never> = styled.svg({
 //   display: 'inline-block',
