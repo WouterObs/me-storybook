@@ -26,6 +26,36 @@ exports[`Storyshots ColorButton red 1`] = `
 </button>
 `;
 
+exports[`Storyshots StyledButton PrimaryButton 1`] = `
+<button
+  className="sc-bdnxRM gdUtwM storybook-button storybook-button--medium storybook-button--primary"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`Storyshots StyledButton SecondaryButton 1`] = `
+<button
+  className="sc-bdnxRM gdUtwM storybook-button storybook-button--small storybook-button--secondary"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
+
 exports[`Storyshots StyledButton StyledButton 1`] = `
 <button
   className="sc-bdnxRM gdUtwM storybook-button storybook-button--medium storybook-button--primary"
