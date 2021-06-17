@@ -25,3 +25,18 @@ exports[`Storyshots ColorButton red 1`] = `
   Color Button
 </button>
 `;
+
+exports[`Storyshots StyledButton StyledButton 1`] = `
+<button
+  className="sc-bdnxRM gdUtwM storybook-button storybook-button--medium storybook-button--primary"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Button
+</button>
+`;
