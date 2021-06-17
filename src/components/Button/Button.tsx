@@ -25,10 +25,6 @@ export interface ButtonProps {
 	onClick?: () => void;
 }
 
-const onClickTest = () => {
-	console.info("Buttone Clicked!");
-};
-
 /**
  * Primary UI component for user interaction
  * @param {ButtonProps} props
@@ -53,7 +49,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps): any => {
 				" "
 			)}
 			style={{ backgroundColor }}
-			onClick={onClick && onClickTest}
+			onClick={onClick}
 			{...rest}
 		>
 			{label}

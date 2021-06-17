@@ -45,3 +45,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+[![Node.js CI](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml)
+[![CodeQL](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml)

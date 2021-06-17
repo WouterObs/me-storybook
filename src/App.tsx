@@ -7,6 +7,9 @@ const onClicked = () => {
 	console.info("Buttone Clicked!");
 };
 const App: React.FC = () => {
+	/**
+	 * ToDo: Remove ButtonProps && the Button component asap. Only to test!
+	 */
 	const props: ButtonProps = {
 		primary: true,
 		label: "Button",
