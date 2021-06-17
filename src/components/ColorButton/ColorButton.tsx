@@ -4,6 +4,11 @@ export interface IProps {
 	btnColor: string;
 	onClick?: (btnColor: string) => void;
 }
+
+const onClickTest = (args?: any) => {
+	console.info("Buttone Clicked! : ", args);
+};
+
 export default (props: IProps) => {
 	const { className, btnColor, onClick } = props;
 	return (
@@ -11,7 +16,9 @@ export default (props: IProps) => {
 			className={className}
 			// style={{ btnColor }}
 			style={{ color: btnColor }}
-			onClick={() => onClick && onClick(btnColor)}
+			onClick={() =>
+				(onClick && onClick(btnColor)) || (onClickTest && onClickTest(btnColor))
+			}
 		>
 			Color Button
 		</button>
