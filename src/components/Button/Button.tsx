@@ -25,16 +25,24 @@ export interface ButtonProps {
 	onClick?: () => void;
 }
 
+const onClickTest = () => {
+	console.info("Buttone Clicked!");
+};
+
 /**
  * Primary UI component for user interaction
+ * @param {ButtonProps} props
+ * @return {*}
  */
-export const Button: React.FC<ButtonProps> = ({
-	primary = false,
-	size = "medium",
-	backgroundColor,
-	label,
-	...props
-}) => {
+export const Button: React.FC<ButtonProps> = (props: ButtonProps): any => {
+	const {
+		primary = false,
+		size = "medium",
+		backgroundColor,
+		label,
+		onClick,
+		...rest
+	} = props;
 	const mode = primary
 		? "storybook-button--primary"
 		: "storybook-button--secondary";
@@ -45,7 +53,8 @@ export const Button: React.FC<ButtonProps> = ({
 				" "
 			)}
 			style={{ backgroundColor }}
-			{...props}
+			onClick={onClick && onClickTest}
+			{...rest}
 		>
 			{label}
 		</StyledButton>
