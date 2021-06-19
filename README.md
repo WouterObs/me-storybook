@@ -45,6 +45,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9477e6f8e2db4e36a7082b9462eeb3f3)](https://app.codacy.com/gh/WouterObs/me-storybook?utm_source=github.com&utm_medium=referral&utm_content=WouterObs/me-storybook&utm_campaign=Badge_Grade_Settings)
 [![Node.js CI](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml)
 [![CodeQL](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml)
 [![CircleCI](https://circleci.com/gh/WouterObs/me-storybook.svg?style=shield)](https://circleci.com/gh/WouterObs/me-storybook)
