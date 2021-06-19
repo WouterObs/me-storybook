@@ -55,18 +55,3 @@ exports[`Storyshots StyledButton SecondaryButton 1`] = `
   Button
 </button>
 `;
-
-exports[`Storyshots StyledButton StyledButton 1`] = `
-<button
-  className="sc-bdnxRM gdUtwM storybook-button storybook-button--medium storybook-button--primary"
-  onClick={[Function]}
-  style={
-    Object {
-      "backgroundColor": undefined,
-    }
-  }
-  type="button"
->
-  Button
-</button>
-`;
