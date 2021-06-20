@@ -26,10 +26,11 @@ exports[`Storyshots ColorButton red 1`] = `
 </button>
 `;
 
-exports[`Storyshots StyledButton PrimaryButton 1`] = `
+exports[`Storyshots StyledButton Default 1`] = `
 <button
-  className="sc-bdnxRM gdUtwM storybook-button storybook-button--medium storybook-button--primary"
+  className="sc-bdnxRM jltbX storybook-button storybook-button--medium storybook-button--primary"
   onClick={[Function]}
+  size="medium"
   style={
     Object {
       "backgroundColor": undefined,
@@ -41,10 +42,27 @@ exports[`Storyshots StyledButton PrimaryButton 1`] = `
 </button>
 `;
 
-exports[`Storyshots StyledButton SecondaryButton 1`] = `
+exports[`Storyshots StyledButton Primary 1`] = `
 <button
-  className="sc-bdnxRM gdUtwM storybook-button storybook-button--small storybook-button--secondary"
+  className="sc-bdnxRM jltbX storybook-button storybook-button--large storybook-button--primary"
   onClick={[Function]}
+  size="large"
+  style={
+    Object {
+      "backgroundColor": undefined,
+    }
+  }
+  type="button"
+>
+  Primary
+</button>
+`;
+
+exports[`Storyshots StyledButton Secondary 1`] = `
+<button
+  className="sc-bdnxRM jltbX storybook-button storybook-button--small storybook-button--secondary"
+  onClick={[Function]}
+  size="small"
   style={
     Object {
       "backgroundColor": undefined,
