@@ -4,44 +4,64 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, select, boolean } from '@storybook/addon-knobs';
 import { Button, ButtonProps } from '../../Button/Button';
 
-const props: ButtonProps = {
+const defaultProps: ButtonProps = {
   primary: true,
   label: 'Button',
   size: 'medium',
 };
-const props2: ButtonProps = {
-  primary: false,
+const primaryProps: ButtonProps = {
+  primary: true,
   backgroundColor: 'white',
+  label: 'Primary',
+  size: 'large',
+};
+const secondaryProps: ButtonProps = {
+  primary: false,
   label: 'Button',
   size: 'small',
 };
-
 storiesOf('StyledButton', module)
   .addDecorator(withKnobs)
-  .add('PrimaryButton', () => {
+  .add('Default', () => {
+    const { label, size } = defaultProps;
     return (
       <Button
-        label={props.label}
-        primary={boolean('primary', props.primary ? true : false)}
+        label={label}
+        primary={boolean('primary', (defaultProps.primary = true))}
         size={select(
           'Size',
           { Small: 'small', Medium: 'medium', Large: 'large' },
-          props.size,
+          size,
         )}
         onClick={action('clicked')}
       />
     );
   })
-  .add('SecondaryButton', () => {
+  .add('Primary', () => {
+    const { label, size } = primaryProps;
     return (
       <Button
-        label={props2.label}
-        primary={boolean('primary', props.primary ? false : true)}
-        backgroundColor={props.primary ? undefined : props2.backgroundColor}
+        label={label}
+        primary={boolean('primary', (primaryProps.primary = true))}
         size={select(
           'Size',
           { Small: 'small', Medium: 'medium', Large: 'large' },
-          props2.size,
+          size,
+        )}
+        onClick={action('clicked')}
+      />
+    );
+  })
+  .add('Secondary', () => {
+    const { label, size } = secondaryProps;
+    return (
+      <Button
+        label={label}
+        primary={boolean('primary', (secondaryProps.primary = false))}
+        size={select(
+          'Size',
+          { Small: 'small', Medium: 'medium', Large: 'large' },
+          size,
         )}
         onClick={action('clicked')}
       />

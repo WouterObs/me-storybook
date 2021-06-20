@@ -1,26 +1,46 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import './Styled/button.css';
 import { StyledButton } from './Styled/button.styled';
 
+/**
+ * StyledButton props Interface.
+ * @export
+ * @interface ButtonProps
+ */
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
+   * @type {boolean}
+   * @memberof ButtonProps
    */
   primary?: boolean;
   /**
+   * Button class / style.
+   * @type {string}
+   * @memberof ButtonProps
+   */
+  className?: string;
+  /**
    * What background color to use
+   * @type {string}
+   * @memberof ButtonProps
    */
   backgroundColor?: string;
   /**
    * How large should the button be?
+   * @type {('small' | 'medium' | 'large')}
+   * @memberof ButtonProps
    */
   size?: 'small' | 'medium' | 'large';
   /**
    * PrimaryButton contents
+   * @type {string}
+   * @memberof ButtonProps
    */
   label: string;
   /**
    * Optional click handler
+   * @memberof ButtonProps
    */
   onClick?: () => void;
 }
@@ -30,24 +50,14 @@ export interface ButtonProps {
  * @param {ButtonProps} props
  * @return {*}
  */
-export const Button: React.FC<ButtonProps> = (props: ButtonProps): any => {
-  const {
-    primary = true,
-    size = 'medium',
-    backgroundColor,
-    label,
-    onClick,
-    ...rest
-  } = props;
-  const mode = primary
-    ? 'storybook-button--primary'
-    : 'storybook-button--secondary';
+export const Button: React.FC<ButtonProps> = (
+  props: ButtonProps,
+): ReactElement => {
+  const { primary = true, backgroundColor, label, onClick, ...rest } = props;
   return (
     <StyledButton
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
-        ' ',
-      )}
+      primary={primary}
       style={{ backgroundColor }}
       onClick={onClick}
       {...rest}
