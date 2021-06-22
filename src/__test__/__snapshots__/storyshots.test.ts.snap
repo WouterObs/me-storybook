@@ -26,6 +26,87 @@ exports[`Storyshots ColorButton red 1`] = `
 </button>
 `;
 
+exports[`Storyshots Resume Sections About 1`] = `
+<section
+  className="sc-gtsrHT hgdcyA"
+  id="about"
+>
+  <div
+    className="sc-dlnjwi hUPwrG row"
+  >
+    <div
+      className="three columns"
+    >
+      <img
+        alt="Tim Baker Profile Pic"
+        className="profile-pic"
+        src="images/profilepic.jpg"
+      />
+    </div>
+    <div
+      className="nine columns main-col"
+    >
+      <h2>
+        About Me
+      </h2>
+      <p>
+        Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.
+      </p>
+      <div
+        className="row"
+      >
+        <div
+          className="columns contact-details"
+        >
+          <h2>
+            Contact Details
+          </h2>
+          <p
+            className="address"
+          >
+            <span>
+              Wouter Langerman
+            </span>
+            <br />
+            <span>
+              35 Arum Road
+              <br />
+              Cape Town
+               
+              Western Province
+              , 
+              7441
+            </span>
+            <br />
+            <span>
+              079 391 2573
+            </span>
+            <br />
+            <span>
+              WouterObs@gmail.com
+            </span>
+          </p>
+        </div>
+        <div
+          className="columns download"
+        >
+          <p>
+            <a
+              className="button"
+            >
+              <i
+                className="fa fa-download"
+              />
+              Download Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
 exports[`Storyshots StyledButton Default 1`] = `
 <button
   className="sc-bdnxRM jltbX storybook-button storybook-button--medium storybook-button--primary"
