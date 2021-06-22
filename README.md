@@ -1,5 +1,7 @@
 # This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
+This project is however mainly used for component development and testing using [Storybook](https://storybook.js.org/).
+
 ## Available Scripts
 
 In the project directory, you can run:
