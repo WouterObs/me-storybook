@@ -1,4 +1,4 @@
-# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+# This project was bootstrapped with <br/>[Create React App](https://github.com/facebook/create-react-app)
 
 This project is however mainly used for component development and testing using [Storybook](https://storybook.js.org/).
 
