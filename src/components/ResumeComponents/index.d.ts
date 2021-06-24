@@ -1,7 +1,8 @@
 //
 //#region Resume Prop Interfaces
+
 /**
- *?Resume properties interface.
+ *?ResumeData properties interface.
  *
  * @export
  * @interface ResumeData
@@ -38,7 +39,7 @@ export interface ResumeData {
 }
 
 /**
- *?Main resume properties interface.
+ *?Main property interface.
  *
  * @export
  * @interface Main
@@ -130,9 +131,12 @@ export interface Main {
   social?: Social[];
 }
 
-export interface Address {
+/**
+ * Type Address
+ */
+export type Address = {
   /**
-   *?Prop
+   *?Prop street
    *
    * @type {string}
    * @memberof Address
@@ -159,58 +163,239 @@ export interface Address {
    * @memberof Address
    */
   zip: string;
-}
+};
 
+/**
+ *?Social property interface.
+ *
+ * @export
+ * @interface Social
+ */
 export interface Social {
+  /**
+   *?Prop name
+   *
+   * @type {string}
+   * @memberof Social
+   */
   name: string;
+  /**
+   *?Prop URL
+   *
+   * @type {string}
+   * @memberof Social
+   */
   url: string;
+  /**
+   *?Prop className
+   *
+   * @type {string}
+   * @memberof Social
+   */
   className: string;
 }
 
+/**
+ *?Portfolio property interface.
+ *
+ * @export
+ * @interface Portfolio
+ */
 export interface Portfolio {
+  /**
+   *?Prop projects
+   *
+   * @type {Project[]}
+   * @memberof Portfolio
+   */
   projects: Project[];
 }
 
+/**
+ *?Project property interface.
+ *
+ * @export
+ * @interface Project
+ */
 export interface Project {
+  /**
+   *?Prop title
+   *
+   * @type {string}
+   * @memberof Project
+   */
   title: string;
+  /**
+   *?Prop category
+   *
+   * @type {string}
+   * @memberof Project
+   */
   category: string;
+  /**
+   *?Prop image
+   *
+   * @type {string}
+   * @memberof Project
+   */
   image: string;
+  /**
+   *?Prop url
+   *
+   * @type {string}
+   * @memberof Project
+   */
   url: string;
 }
 
+/**
+ *?Resume property interface.
+ *
+ * @export
+ * @interface Resume
+ */
 export interface Resume {
+  /**
+   *?Prop skillmessage
+   *
+   * @type {string}
+   * @memberof Resume
+   */
   skillmessage: string;
+  /**
+   *?Prop education
+   *
+   * @type {Education[]}
+   * @memberof Resume
+   */
   education: Education[];
+  /**
+   *?Prop work
+   *
+   * @type {Work[]}
+   * @memberof Resume
+   */
   work: Work[];
+  /**
+   *?Prop skills
+   *
+   * @type {Skill[]}
+   * @memberof Resume
+   */
   skills: Skill[];
 }
 
-export interface Education {
+/**
+ * Type Education
+ */
+export type Education = {
+  /**
+   *?Prop school
+   *
+   * @type {string}
+   */
   school: string;
+  /**
+   *?Prop degree
+   *
+   * @type {string}
+   */
   degree: string;
+  /**
+   *?Prop graduated
+   *
+   * @type {string}
+   */
   graduated: string;
+  /**
+   *?Prop description
+   *
+   * @type {string}
+   */
   description: string;
-}
+};
 
-export interface Skill {
+/**
+ * Type Skill
+ */
+export type Skill = {
+  /**
+   *?Prop name
+   *
+   * @type {string}
+   */
   name: string;
+  /**
+   *?Prop level
+   *
+   * @type {string}
+   */
   level: string;
-}
+};
 
-export interface Work {
+/**
+ * Type Work
+ */
+export type Work = {
+  /**
+   *?Prop company
+   *
+   * @type {string}
+   */
   company: string;
+  /**
+   *?Prop title
+   *
+   * @type {string}
+   */
   title: string;
+  /**
+   *?Prop years
+   *
+   * @type {string}
+   */
   years: string;
+  /**
+   *?Prop description
+   *
+   * @type {string}
+   */
   description: string;
-}
+};
 
+/**
+ *?Testimonials property interface.
+ *
+ * @export
+ * @interface Testimonials
+ */
 export interface Testimonials {
+  /**
+   *?Prop Testimonials
+   *
+   * @type {Testimonial[]}
+   * @memberof Testimonials
+   */
   testimonials: Testimonial[];
 }
 
-export interface Testimonial {
+/**
+ * Type Testimonial
+ */
+export type Testimonial = {
+  /**
+   *?Prop text
+   *
+   * @type {string}
+   */
   text: string;
+  /**
+   *?Prop user
+   *
+   * @type {string}
+   */
   user: string;
-}
+};
+
 //#endregion Resume Prop Interfaces
 //

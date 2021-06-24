@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-var */
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Footer extends Component {
   render() {
@@ -23,9 +23,9 @@ class Footer extends Component {
             <ul className="social-links">{networks}</ul>
 
             <ul className="copyright">
-              <li>&copy; Copyright 2017 Tim Baker</li>
+              <li>&copy; Copyright 2021 WouterObs</li>
               <li>
-                Design by{" "}
+                Design by{' '}
                 <a title="Styleshout" href="http://www.styleshout.com/">
                   Styleshout
                 </a>
