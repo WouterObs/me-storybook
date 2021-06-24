@@ -1,24 +1,30 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-var */
-import React, { Component } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { Component, ReactElement } from 'react';
+import { Main } from '..';
+import { Row, Section } from './Styled/Contact.styled';
+import PropTypes from 'prop-types';
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
-class Contact extends Component {
-  render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
+/**
+ *?Resume 'Contact' section/component.
+ *
+ * @class Contact
+ * @extends {Component<Main>}
+ */
+export default class Contact extends Component<Main> {
+  static propTypes = {
+    name: PropTypes.string,
+    address: PropTypes.object,
+    phone: PropTypes.string,
+    contactmessage: PropTypes.string,
+  };
+  render(): ReactElement {
+    const { name, address, phone, contactmessage } = this.props;
+    const { street, city, state, zip } = address;
 
     return (
-      <section id="contact">
+      <Section id="contact">
         <div className="row section-head">
           <div className="two columns header-col">
             <h1>
@@ -27,11 +33,11 @@ class Contact extends Component {
           </div>
 
           <div className="ten columns">
-            <p className="lead">{message}</p>
+            <p className="lead">{contactmessage}</p>
           </div>
         </div>
 
-        <div className="row">
+        <Row className="row">
           <div className="eight columns">
             <form action="" method="post" id="contactForm" name="contactForm">
               <fieldset>
@@ -42,10 +48,10 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactName"
                     name="contactName"
-                    onChange={this.handleChange}
+                    // onChange={this.handleChange}
                   />
                 </div>
 
@@ -56,10 +62,10 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactEmail"
                     name="contactEmail"
-                    onChange={this.handleChange}
+                    // onChange={this.handleChange}
                   />
                 </div>
 
@@ -68,10 +74,10 @@ class Contact extends Component {
                   <input
                     type="text"
                     defaultValue=""
-                    size="35"
+                    size={35}
                     id="contactSubject"
                     name="contactSubject"
-                    onChange={this.handleChange}
+                    // onChange={this.handleChange}
                   />
                 </div>
 
@@ -79,12 +85,7 @@ class Contact extends Component {
                   <label htmlFor="contactMessage">
                     Message <span className="required">*</span>
                   </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="contactMessage"
-                  ></textarea>
+                  <textarea cols={50} rows={15} id="contactMessage" name="contactMessage"></textarea>
                 </div>
 
                 <div>
@@ -121,9 +122,8 @@ class Contact extends Component {
               <ul id="twitter">
                 <li>
                   <span>
-                    This is Photoshop's version of Lorem Ipsum. Proin gravida
-                    nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-                    quis bibendum auctor, nisi elit consequat ipsum
+                    This is Photoshop&apos;s version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean
+                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>
                   <b>
@@ -132,10 +132,8 @@ class Contact extends Component {
                 </li>
                 <li>
                   <span>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                     <a href="#">http://t.co/CGIrdxIlI3</a>
                   </span>
                   <b>
@@ -145,10 +143,8 @@ class Contact extends Component {
               </ul>
             </div>
           </aside>
-        </div>
-      </section>
+        </Row>
+      </Section>
     );
   }
 }
-
-export default Contact;
