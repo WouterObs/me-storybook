@@ -42,7 +42,7 @@
   // MD024/no-duplicate-heading/no-duplicate-header - Multiple headings with the same content
   "MD024": false,
   // MD025/single-title/single-h1 - Multiple top level headings in the same document
-  "MD025": true,
+  "MD025": false,
   // MD026/no-trailing-punctuation - Trailing punctuation in heading
   "MD026": { "punctuation": ".,;:!。，；：！？" }, // specifically allow "?"
   // MD027/no-multiple-space-blockquote - Multiple spaces after blockquote symbol
@@ -59,16 +59,7 @@
   "MD032": false,
   // MD033/no-inline-html - Inline HTML
   "MD033": {
-    "allowed_elements": [
-      "a",
-      "img",
-      "br",
-      "sup",
-      "h1",
-      "p",
-      "details",
-      "summary"
-    ]
+    "allowed_elements": ["a", "img", "br", "sup", "h1", "p", "details", "summary"]
   },
   // MD034/no-bare-urls - Bare URL used
   "MD034": false,
