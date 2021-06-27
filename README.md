@@ -49,3 +49,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 [![Node.js CI](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/node.js.yml)
 [![CodeQL](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml/badge.svg?branch=master)](https://github.com/WouterObs/me-storybook/actions/workflows/codeql-analysis.yml)
 [![CircleCI](https://circleci.com/gh/WouterObs/me-storybook.svg?style=shield)](https://circleci.com/gh/WouterObs/me-storybook)
+[![wakatime](https://wakatime.com/badge/github/WouterObs/me-storybook.svg)](https://wakatime.com/badge/github/WouterObs/me-storybook)
+
+## [Wakatime Coding Languages](https://wakatime.com/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/projects/fitzuaybiu?start=2021-06-21&end=2021-06-27)
+
+![Coding Languages](https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/63dda626-1e81-4f44-bda3-23714d4c33ed.svg)
+
+![ProfilePic](public\images\profilepic.jpg)

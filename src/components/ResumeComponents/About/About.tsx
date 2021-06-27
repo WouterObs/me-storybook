@@ -4,6 +4,9 @@ import { Row, Section } from './Styled/About.styled';
 import PropTypes from 'prop-types';
 import '../../../../public/css/default.css';
 import '../../../../public/css/layout.css';
+import EmbededCodeActivitySVG from '../../WakatimeEmbeddableCharts/EmbededCodeActivitySVG/EmbedCodeActivitySVG';
+import EmbededChartsGroup from '../../WakatimeEmbeddableCharts/EmbededChartsGroup/EmbededChartsGroup';
+import EmbededLanguagesSVG from '../../WakatimeEmbeddableCharts/EmbedLanguagesSVG/EmbededLanguagesSVG';
 
 /**
  *?Resume 'About' section/component.
@@ -28,43 +31,49 @@ export default class About extends Component<Main> {
     const { street, city, state, zip } = address;
     const profilepic = 'images/' + image;
     return (
-      <Section id="about">
-        <Row className="row">
-          <div className="three columns">
-            <img className="profile-pic" src={profilepic} alt="Tim Baker Profile Pic" />
-          </div>
-          <div className="nine columns main-col">
-            <h2>About Me</h2>
+      <React.Fragment>
+        <EmbededChartsGroup>
+          <EmbededLanguagesSVG />
+          <EmbededCodeActivitySVG />
+        </EmbededChartsGroup>
+        <Section id="about">
+          <Row className="row">
+            <div className="three columns">
+              <img className="profile-pic" src={profilepic} alt="Tim Baker Profile Pic" />
+            </div>
+            <div className="nine columns main-col">
+              <h2>About Me</h2>
 
-            <p>{bio}</p>
-            <div className="row">
-              <div className="columns contact-details">
-                <h2>Contact Details</h2>
-                <p className="address">
-                  <span>{name}</span>
-                  <br />
-                  <span>
-                    {street}
+              <p>{bio}</p>
+              <div className="row">
+                <div className="columns contact-details">
+                  <h2>Contact Details</h2>
+                  <p className="address">
+                    <span>{name}</span>
                     <br />
-                    {city} {state}, {zip}
-                  </span>
-                  <br />
-                  <span>{phone}</span>
-                  <br />
-                  <span>{email}</span>
-                </p>
-              </div>
-              <div className="columns download">
-                <p>
-                  <a href={resumedownload} className="button">
-                    <i className="fa fa-download"></i>Download Resume
-                  </a>
-                </p>
+                    <span>
+                      {street}
+                      <br />
+                      {city} {state}, {zip}
+                    </span>
+                    <br />
+                    <span>{phone}</span>
+                    <br />
+                    <span>{email}</span>
+                  </p>
+                </div>
+                <div className="columns download">
+                  <p>
+                    <a href={resumedownload} className="button">
+                      <i className="fa fa-download"></i>Download Resume
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        </Row>
-      </Section>
+          </Row>
+        </Section>
+      </React.Fragment>
     );
   }
 }

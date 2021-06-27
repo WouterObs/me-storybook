@@ -20,7 +20,7 @@ const secondaryProps: ButtonProps = {
   label: 'Button',
   size: 'small',
 };
-storiesOf('StyledButton', module)
+storiesOf('Styled-Components | StyledButton', module)
   .addDecorator(withKnobs)
   .add('Default', () => {
     const { label, size } = defaultProps;
@@ -28,11 +28,7 @@ storiesOf('StyledButton', module)
       <Button
         label={label}
         primary={boolean('primary', (defaultProps.primary = true))}
-        size={select(
-          'Size',
-          { Small: 'small', Medium: 'medium', Large: 'large' },
-          size,
-        )}
+        size={select('Size', { Small: 'small', Medium: 'medium', Large: 'large' }, size)}
         onClick={action('clicked')}
       />
     );
@@ -43,11 +39,7 @@ storiesOf('StyledButton', module)
       <Button
         label={label}
         primary={boolean('primary', (primaryProps.primary = true))}
-        size={select(
-          'Size',
-          { Small: 'small', Medium: 'medium', Large: 'large' },
-          size,
-        )}
+        size={select('Size', { Small: 'small', Medium: 'medium', Large: 'large' }, size)}
         onClick={action('clicked')}
       />
     );
@@ -58,11 +50,7 @@ storiesOf('StyledButton', module)
       <Button
         label={label}
         primary={boolean('primary', (secondaryProps.primary = false))}
-        size={select(
-          'Size',
-          { Small: 'small', Medium: 'medium', Large: 'large' },
-          size,
-        )}
+        size={select('Size', { Small: 'small', Medium: 'medium', Large: 'large' }, size)}
         onClick={action('clicked')}
       />
     );

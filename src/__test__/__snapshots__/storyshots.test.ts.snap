@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots ColorButton blue 1`] = `
+exports[`Storyshots DemoButton | ColorButton blue 1`] = `
 <button
   onClick={[Function]}
   style={
@@ -13,7 +13,7 @@ exports[`Storyshots ColorButton blue 1`] = `
 </button>
 `;
 
-exports[`Storyshots ColorButton red 1`] = `
+exports[`Storyshots DemoButton | ColorButton red 1`] = `
 <button
   onClick={[Function]}
   style={
@@ -27,89 +27,115 @@ exports[`Storyshots ColorButton red 1`] = `
 `;
 
 exports[`Storyshots Resume Sections About 1`] = `
-<section
-  className="sc-gtsrHT hgdcyA"
-  id="about"
->
-  <div
-    className="sc-dlnjwi hUPwrG row"
+Array [
+  <section
+    className="sc-jSFjdj dDeZmF"
   >
     <div
-      className="three columns"
+      className="sc-eCApnc ixCQjX"
+      id="fig-languages"
     >
-      <img
-        alt="Tim Baker Profile Pic"
-        className="profile-pic"
-        src="images/profilepic.jpg"
-      />
+      <figure>
+        <embed
+          src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/63dda626-1e81-4f44-bda3-23714d4c33ed.svg"
+        />
+      </figure>
     </div>
     <div
-      className="nine columns main-col"
+      className="sc-hKFxyN fYZbZj"
+      id="fig-activity"
     >
-      <h2>
-        About Me
-      </h2>
-      <p>
-        Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.
-      </p>
+      <figure>
+        <embed
+          src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/81837c0b-239c-4d35-b9a1-39d049d584ef.svg"
+        />
+      </figure>
+    </div>
+  </section>,
+  <section
+    className="sc-gtsrHT hgdcyA"
+    id="about"
+  >
+    <div
+      className="sc-dlnjwi hUPwrG row"
+    >
       <div
-        className="row"
+        className="three columns"
       >
+        <img
+          alt="Tim Baker Profile Pic"
+          className="profile-pic"
+          src="images/profilepic.jpg"
+        />
+      </div>
+      <div
+        className="nine columns main-col"
+      >
+        <h2>
+          About Me
+        </h2>
+        <p>
+          Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.
+        </p>
         <div
-          className="columns contact-details"
+          className="row"
         >
-          <h2>
-            Contact Details
-          </h2>
-          <p
-            className="address"
+          <div
+            className="columns contact-details"
           >
-            <span>
-              Wouter Langerman
-            </span>
-            <br />
-            <span>
-              35 Arum Road
-              <br />
-              Cape Town
-               
-              Western Province
-              , 
-              7441
-            </span>
-            <br />
-            <span>
-              079 391 2573
-            </span>
-            <br />
-            <span>
-              WouterObs@gmail.com
-            </span>
-          </p>
-        </div>
-        <div
-          className="columns download"
-        >
-          <p>
-            <a
-              className="button"
+            <h2>
+              Contact Details
+            </h2>
+            <p
+              className="address"
             >
-              <i
-                className="fa fa-download"
-              />
-              Download Resume
-            </a>
-          </p>
+              <span>
+                Wouter Langerman
+              </span>
+              <br />
+              <span>
+                35 Arum Road
+                <br />
+                Cape Town
+                 
+                Western Province
+                , 
+                7441
+              </span>
+              <br />
+              <span>
+                079 391 2573
+              </span>
+              <br />
+              <span>
+                WouterObs@gmail.com
+              </span>
+            </p>
+          </div>
+          <div
+            className="columns download"
+          >
+            <p>
+              <a
+                className="button"
+              >
+                <i
+                  className="fa fa-download"
+                />
+                Download Resume
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>,
+]
 `;
 
 exports[`Storyshots Resume Sections Contact 1`] = `
 <section
-  className="sc-hKFxyN cPaFmy"
+  className="sc-gKAaRy WFzfH"
   id="contact"
 >
   <div
@@ -135,7 +161,7 @@ exports[`Storyshots Resume Sections Contact 1`] = `
     </div>
   </div>
   <div
-    className="sc-eCApnc hoQeaC row"
+    className="sc-iCoGMd dwUJJH row"
   >
     <div
       className="eight columns"
@@ -329,7 +355,7 @@ exports[`Storyshots Resume Sections Contact 1`] = `
 </section>
 `;
 
-exports[`Storyshots StyledButton Default 1`] = `
+exports[`Storyshots Styled-Components | StyledButton Default 1`] = `
 <button
   className="sc-bdnxRM jltbX storybook-button storybook-button--medium storybook-button--primary"
   onClick={[Function]}
@@ -345,7 +371,7 @@ exports[`Storyshots StyledButton Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots StyledButton Primary 1`] = `
+exports[`Storyshots Styled-Components | StyledButton Primary 1`] = `
 <button
   className="sc-bdnxRM jltbX storybook-button storybook-button--large storybook-button--primary"
   onClick={[Function]}
@@ -361,7 +387,7 @@ exports[`Storyshots StyledButton Primary 1`] = `
 </button>
 `;
 
-exports[`Storyshots StyledButton Secondary 1`] = `
+exports[`Storyshots Styled-Components | StyledButton Secondary 1`] = `
 <button
   className="sc-bdnxRM jltbX storybook-button storybook-button--small storybook-button--secondary"
   onClick={[Function]}
@@ -375,4 +401,57 @@ exports[`Storyshots StyledButton Secondary 1`] = `
 >
   Button
 </button>
+`;
+
+exports[`Storyshots Wakatime | Embeddable Charts EmbededChartsGroup 1`] = `
+<section
+  className="sc-jSFjdj dDeZmF"
+>
+  <div
+    className="sc-eCApnc ixCQjX"
+    id="fig-languages"
+  >
+    <figure>
+      <embed
+        src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/63dda626-1e81-4f44-bda3-23714d4c33ed.svg"
+      />
+    </figure>
+  </div>
+  <div
+    className="sc-hKFxyN fYZbZj"
+    id="fig-activity"
+  >
+    <figure>
+      <embed
+        src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/81837c0b-239c-4d35-b9a1-39d049d584ef.svg"
+      />
+    </figure>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Wakatime Embeddable Charts | SVGs | Bar Charts EmbededCodeActivitySVG 1`] = `
+<div
+  className="sc-hKFxyN fYZbZj"
+  id="fig-activity"
+>
+  <figure>
+    <embed
+      src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/81837c0b-239c-4d35-b9a1-39d049d584ef.svg"
+    />
+  </figure>
+</div>
+`;
+
+exports[`Storyshots Wakatime Embeddable Charts | SVGs | Wheel Charts EmbededLanguagesSVG 1`] = `
+<div
+  className="sc-eCApnc ixCQjX"
+  id="fig-languages"
+>
+  <figure>
+    <embed
+      src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/63dda626-1e81-4f44-bda3-23714d4c33ed.svg"
+    />
+  </figure>
+</div>
 `;

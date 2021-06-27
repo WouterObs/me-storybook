@@ -1,18 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Button, ButtonProps } from './components/Button/Button';
+import EmbededChartsGroup from './components/WakatimeEmbeddableCharts/EmbededChartsGroup/EmbededChartsGroup';
 
-const onClickEvent = () => {
-  console.info('Button Clicked!');
-};
-const btnProps: ButtonProps = {
-  primary: true,
-  label: 'Button',
-  size: 'medium',
-};
 const App: React.FC = () => {
-  const { primary, label, size } = btnProps;
   return (
     <div className="App">
       <header className="App-header">
@@ -20,21 +11,11 @@ const App: React.FC = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
       </header>
-      <Button
-        label={label}
-        primary={primary}
-        size={size}
-        onClick={onClickEvent}
-      />
+      <EmbededChartsGroup></EmbededChartsGroup>
     </div>
   );
 };
