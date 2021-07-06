@@ -3,7 +3,11 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import EmbededCodeActivitySVG from '../EmbedCodeActivitySVG';
 
-storiesOf('Wakatime Embeddable Charts | SVGs | Bar Charts', module)
+const storyTitle = {
+  title: 'Wakatime | Embeddable Charts/SVG/Bar Charts',
+};
+
+storiesOf(storyTitle.title, module)
   .addDecorator(withKnobs)
   .add('EmbededCodeActivitySVG', () => {
     return <EmbededCodeActivitySVG />;

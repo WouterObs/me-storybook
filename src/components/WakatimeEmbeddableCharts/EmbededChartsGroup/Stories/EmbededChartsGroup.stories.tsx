@@ -5,7 +5,11 @@ import EmbededChartsGroup from '../EmbededChartsGroup';
 import EmbededCodeActivitySVG from '../../EmbededCodeActivitySVG/EmbedCodeActivitySVG';
 import EmbededLanguagesSVG from '../../EmbedLanguagesSVG/EmbededLanguagesSVG';
 
-storiesOf('Wakatime | Embeddable Charts', module)
+const storyTitle = {
+  title: 'Wakatime | Embeddable Charts',
+};
+
+storiesOf(storyTitle.title, module)
   .addDecorator(withKnobs)
   .add('EmbededChartsGroup', () => {
     return (

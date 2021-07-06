@@ -3,7 +3,11 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
 import EmbededLanguagesSVG from '../EmbededLanguagesSVG';
 
-storiesOf('Wakatime Embeddable Charts | SVGs | Wheel Charts', module)
+const storyTitle = {
+  title: 'Wakatime | Embeddable Charts/SVG/Wheel Charts',
+};
+
+storiesOf(storyTitle.title, module)
   .addDecorator(withKnobs)
   .add('EmbededLanguagesSVG', () => {
     return <EmbededLanguagesSVG />;
