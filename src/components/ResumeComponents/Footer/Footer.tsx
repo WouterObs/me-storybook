@@ -1,26 +1,26 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-var */
-import React, { Component } from 'react';
+import React, { Component, ReactElement } from 'react';
+import { Main } from '..';
 
-class Footer extends Component {
-  render() {
-    if (this.props.data) {
-      var networks = this.props.data.social.map(function (network) {
-        return (
-          <li key={network.name}>
-            <a href={network.url}>
-              <i className={network.className}></i>
-            </a>
-          </li>
-        );
-      });
-    }
-
+class Footer extends Component<Main> {
+  render(): ReactElement {
+    const { social } = this.props;
     return (
       <footer>
         <div className="row">
           <div className="twelve columns">
-            <ul className="social-links">{networks}</ul>
+            <ul className="social-links">
+              {social && social.length > 0
+                ? social.map(network => {
+                    return (
+                      <li key={network.name}>
+                        <a href={network.url}>
+                          <i className={network.className}></i>
+                        </a>
+                      </li>
+                    );
+                  })
+                : undefined}
+            </ul>
 
             <ul className="copyright">
               <li>&copy; Copyright 2021 WouterObs</li>

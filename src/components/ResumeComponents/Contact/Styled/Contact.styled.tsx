@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React, { HTMLAttributes, ReactElement } from 'react';
 import styled from 'styled-components';
 
@@ -17,11 +16,23 @@ const StyledRow = styled.div`
   margin: 0 auto;
 `;
 
+/**
+ * ?RFC returning Styled Component -> Section
+ *
+ * @param {HTMLAttributes<HTMLElement>} props
+ * @return {*}  {ReactElement}
+ */
 export const Section = (props: HTMLAttributes<HTMLElement>): ReactElement => {
   const { children, ...rest } = props;
   return <StyledSection {...rest}>{children}</StyledSection>;
 };
 
+/**
+ * ?RFC returning Styled Component -> Row
+ *
+ * @param {HTMLAttributes<HTMLElement>} props
+ * @return {*}  {ReactElement}
+ */
 export const Row = (props: HTMLAttributes<HTMLElement>): ReactElement => {
   const { children, ...rest } = props;
   return <StyledRow {...rest}>{children}</StyledRow>;

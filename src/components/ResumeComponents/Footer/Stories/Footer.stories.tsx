@@ -1,14 +1,42 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs } from '@storybook/addon-knobs';
-import { Main } from '../..';
-import Contact from '../Contact';
+import { Main, Social } from '../..';
+import Footer from '../Footer';
 
 const storyTitle = {
   title: 'Resume Components | Page Sections',
 };
 
-const contactProps: Main = {
+const socialData: Social[] = [
+  {
+    name: 'facebook',
+    url: 'http://facebook.com/tim.baker.906',
+    className: 'fa fa-facebook',
+  },
+  {
+    name: 'twitter',
+    url: 'http://twitter.com',
+    className: 'fa fa-twitter',
+  },
+  {
+    name: 'linkedin',
+    url: 'https://www.linkedin.com/in/tim-baker-8420009a/',
+    className: 'fa fa-linkedin',
+  },
+  {
+    name: 'instagram',
+    url: 'http://instagram.com/tbaker_x',
+    className: 'fa fa-instagram',
+  },
+  {
+    name: 'github',
+    url: 'http://github.com/tbakerx',
+    className: 'fa fa-github',
+  },
+];
+
+const footerProps: Main = {
   name: 'Wouter Langerman',
   occupation: 'Software Developer D2',
   description:
@@ -24,10 +52,11 @@ const contactProps: Main = {
     state: 'Western Province',
     zip: '7441',
   },
+  social: socialData,
 };
 storiesOf(storyTitle.title, module)
   .addDecorator(withKnobs)
-  .add('Contact', () => {
-    const { ...props } = contactProps;
-    return <Contact {...props} />;
+  .add('Footer', () => {
+    const { ...props } = footerProps;
+    return <Footer {...props} />;
   });

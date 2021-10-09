@@ -1,26 +1,19 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
-/* eslint-disable no-var */
-import React, { Component } from "react";
+import React, { Component, ReactElement } from 'react';
+import { Main } from '..';
+import PropTypes from 'prop-types';
 
-class Header extends Component {
-  render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var occupation = this.props.data.occupation;
-      var description = this.props.data.description;
-      var city = this.props.data.address.city;
-      var networks = this.props.data.social.map(function (network) {
-        return (
-          <li key={network.name}>
-            <a href={network.url}>
-              <i className={network.className}></i>
-            </a>
-          </li>
-        );
-      });
-    }
-
+class Header extends Component<Main> {
+  static propTypes = {
+    name: PropTypes.string,
+    occupation: PropTypes.string,
+    description: PropTypes.string,
+    address: PropTypes.object,
+    social: PropTypes.array,
+  };
+  render(): ReactElement {
+    const { name, occupation, description, address, social } = this.props;
+    const { city } = address;
     return (
       <header id="home">
         <nav id="nav-wrap">
@@ -72,7 +65,19 @@ class Header extends Component {
               I'm a {city} based <span>{occupation}</span>. {description}.
             </h3>
             <hr />
-            <ul className="social">{networks}</ul>
+            <ul className="social">
+              {social && social.length > 0
+                ? social.map(network => {
+                    return (
+                      <li key={network.name}>
+                        <a href={network.url}>
+                          <i className={network.className}></i>
+                        </a>
+                      </li>
+                    );
+                  })
+                : undefined}
+            </ul>
           </div>
         </div>
 

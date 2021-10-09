@@ -3,8 +3,6 @@ import React, { Component, ReactElement } from 'react';
 import { Main } from '..';
 import { Row, Section } from './Styled/Contact.styled';
 import PropTypes from 'prop-types';
-import '../../../../public/css/default.css';
-import '../../../../public/css/layout.css';
 
 /**
  *?Resume 'Contact' section/component.

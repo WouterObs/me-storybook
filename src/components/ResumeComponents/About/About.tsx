@@ -1,12 +1,7 @@
-import React, { Component, ReactElement } from 'react';
+import React, { Component, Fragment, ReactElement } from 'react';
 import { Main } from '../index.d';
 import { Row, Section } from './Styled/About.styled';
 import PropTypes from 'prop-types';
-import '../../../../public/css/default.css';
-import '../../../../public/css/layout.css';
-import EmbededCodeActivitySVG from '../../WakatimeEmbeddableCharts/EmbededCodeActivitySVG/EmbedCodeActivitySVG';
-import EmbededChartsGroup from '../../WakatimeEmbeddableCharts/EmbededChartsGroup/EmbededChartsGroup';
-import EmbededLanguagesSVG from '../../WakatimeEmbeddableCharts/EmbedLanguagesSVG/EmbededLanguagesSVG';
 
 /**
  *?Resume 'About' section/component.
@@ -31,11 +26,7 @@ export default class About extends Component<Main> {
     const { street, city, state, zip } = address;
     const profilepic = 'images/' + image;
     return (
-      <React.Fragment>
-        <EmbededChartsGroup>
-          <EmbededLanguagesSVG />
-          <EmbededCodeActivitySVG />
-        </EmbededChartsGroup>
+      <Fragment>
         <Section id="about">
           <Row className="row">
             <div className="three columns">
@@ -73,7 +64,7 @@ export default class About extends Component<Main> {
             </div>
           </Row>
         </Section>
-      </React.Fragment>
+      </Fragment>
     );
   }
 }
