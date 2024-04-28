@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-var */
 import React, { Component } from "react";
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
 class Portfolio extends Component {
   render() {

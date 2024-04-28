@@ -2,6 +2,8 @@ import React, { Component, Fragment, ReactElement } from 'react';
 import { Main } from '../index.d';
 import { Row, Section } from './Styled/About.styled';
 import PropTypes from 'prop-types';
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
 /**
  *?Resume 'About' section/component.
@@ -36,7 +38,7 @@ export default class About extends Component<Main> {
               <h2>About Me</h2>
 
               <p>{bio}</p>
-              <div className="row">
+              <Row className="row">
                 <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
@@ -60,7 +62,7 @@ export default class About extends Component<Main> {
                     </a>
                   </p>
                 </div>
-              </div>
+              </Row>
             </div>
           </Row>
         </Section>

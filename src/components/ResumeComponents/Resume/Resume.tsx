@@ -2,6 +2,8 @@
 /* eslint-disable no-var */
 import React, { Component, ReactElement } from 'react';
 import { Resume as ResumeData } from '..';
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
 class Resume extends Component<ResumeData> {
   render(): ReactElement {

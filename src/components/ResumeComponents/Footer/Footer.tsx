@@ -1,5 +1,7 @@
 import React, { Component, ReactElement } from 'react';
 import { Main } from '..';
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
 class Footer extends Component<Main> {
   render(): ReactElement {

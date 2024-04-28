@@ -2,6 +2,8 @@
 import React, { Component, ReactElement } from 'react';
 import { Main } from '..';
 import PropTypes from 'prop-types';
+import '../../../../public/css/default.css';
+import '../../../../public/css/layout.css';
 
 class Header extends Component<Main> {
   static propTypes = {

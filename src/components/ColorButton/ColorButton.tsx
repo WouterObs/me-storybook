@@ -32,11 +32,7 @@ export interface IProps {
 export const ColorButton: React.FC<IProps> = (props: IProps): ReactElement => {
   const { className, btnColor, onClick } = props;
   return (
-    <button
-      className={className}
-      style={{ color: btnColor }}
-      onClick={() => onClick && onClick(btnColor)}
-    >
+    <button className={className} style={{ color: btnColor }} onClick={() => onClick && onClick(btnColor)}>
       Color Button
     </button>
   );
