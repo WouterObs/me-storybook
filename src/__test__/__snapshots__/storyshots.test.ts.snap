@@ -26,6 +26,401 @@ exports[`Storyshots DemoButton | ColorButton red 1`] = `
 </button>
 `;
 
+exports[`Storyshots Resume Components | Page Sections About 1`] = `
+<section
+  className="sc-gtsrHT hgdcyA"
+  id="about"
+>
+  <div
+    className="sc-dlnjwi hUPwrG row"
+  >
+    <div
+      className="three columns"
+    >
+      <img
+        alt="Tim Baker Profile Pic"
+        className="profile-pic"
+        src="images/profilepic.jpg"
+      />
+    </div>
+    <div
+      className="nine columns main-col"
+    >
+      <h2>
+        About Me
+      </h2>
+      <p>
+        Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.
+      </p>
+      <div
+        className="sc-dlnjwi hUPwrG row"
+      >
+        <div
+          className="columns contact-details"
+        >
+          <h2>
+            Contact Details
+          </h2>
+          <p
+            className="address"
+          >
+            <span>
+              Wouter Langerman
+            </span>
+            <br />
+            <span>
+              35 Arum Road
+              <br />
+              Cape Town
+               
+              Western Province
+              , 
+              7441
+            </span>
+            <br />
+            <span>
+              079 391 2573
+            </span>
+            <br />
+            <span>
+              WouterObs@gmail.com
+            </span>
+          </p>
+        </div>
+        <div
+          className="columns download"
+        >
+          <p>
+            <a
+              className="button"
+            >
+              <i
+                className="fa fa-download"
+              />
+              Download Resume
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Resume Components | Page Sections Contact 1`] = `
+<section
+  className="sc-hKFxyN cPaFmy"
+  id="contact"
+>
+  <div
+    className="row section-head"
+  >
+    <div
+      className="two columns header-col"
+    >
+      <h1>
+        <span>
+          Get In Touch.
+        </span>
+      </h1>
+    </div>
+    <div
+      className="ten columns"
+    >
+      <p
+        className="lead"
+      >
+        Here is where you should write your message to readers to have them get in contact with you.
+      </p>
+    </div>
+  </div>
+  <div
+    className="sc-eCApnc hoQeaC row"
+  >
+    <div
+      className="eight columns"
+    >
+      <form
+        action=""
+        id="contactForm"
+        method="post"
+        name="contactForm"
+      >
+        <fieldset>
+          <div>
+            <label
+              htmlFor="contactName"
+            >
+              Name 
+              <span
+                className="required"
+              >
+                *
+              </span>
+            </label>
+            <input
+              defaultValue=""
+              id="contactName"
+              name="contactName"
+              size={35}
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="contactEmail"
+            >
+              Email 
+              <span
+                className="required"
+              >
+                *
+              </span>
+            </label>
+            <input
+              defaultValue=""
+              id="contactEmail"
+              name="contactEmail"
+              size={35}
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="contactSubject"
+            >
+              Subject
+            </label>
+            <input
+              defaultValue=""
+              id="contactSubject"
+              name="contactSubject"
+              size={35}
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="contactMessage"
+            >
+              Message 
+              <span
+                className="required"
+              >
+                *
+              </span>
+            </label>
+            <textarea
+              cols={50}
+              id="contactMessage"
+              name="contactMessage"
+              rows={15}
+            />
+          </div>
+          <div>
+            <button
+              className="submit"
+            >
+              Submit
+            </button>
+            <span
+              id="image-loader"
+            >
+              <img
+                alt=""
+                src="images/loader.gif"
+              />
+            </span>
+          </div>
+        </fieldset>
+      </form>
+      <div
+        id="message-warning"
+      >
+         Error boy
+      </div>
+      <div
+        id="message-success"
+      >
+        <i
+          className="fa fa-check"
+        />
+        Your message was sent, thank you!
+        <br />
+      </div>
+    </div>
+    <aside
+      className="four columns footer-widgets"
+    >
+      <div
+        className="widget widget_contact"
+      >
+        <h4>
+          Address and Phone
+        </h4>
+        <p
+          className="address"
+        >
+          Wouter Langerman
+          <br />
+          35 Arum Road
+           
+          <br />
+          Cape Town
+          , 
+          Western Province
+           
+          7441
+          <br />
+          <span>
+            079 391 2573
+          </span>
+        </p>
+      </div>
+      <div
+        className="widget widget_tweets"
+      >
+        <h4
+          className="widget-title"
+        >
+          Latest Tweets
+        </h4>
+        <ul
+          id="twitter"
+        >
+          <li>
+            <span>
+              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+              <a
+                href="#"
+              >
+                http://t.co/CGIrdxIlI3
+              </a>
+            </span>
+            <b>
+              <a
+                href="#"
+              >
+                2 Days Ago
+              </a>
+            </b>
+          </li>
+          <li>
+            <span>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+              <a
+                href="#"
+              >
+                http://t.co/CGIrdxIlI3
+              </a>
+            </span>
+            <b>
+              <a
+                href="#"
+              >
+                3 Days Ago
+              </a>
+            </b>
+          </li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+`;
+
+exports[`Storyshots Resume Components | Page Sections Footer 1`] = `
+<footer>
+  <div
+    className="row"
+  >
+    <div
+      className="twelve columns"
+    >
+      <ul
+        className="social-links"
+      >
+        <li>
+          <a
+            href="http://facebook.com/tim.baker.906"
+          >
+            <i
+              className="fa fa-facebook"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://twitter.com"
+          >
+            <i
+              className="fa fa-twitter"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/tim-baker-8420009a/"
+          >
+            <i
+              className="fa fa-linkedin"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://instagram.com/tbaker_x"
+          >
+            <i
+              className="fa fa-instagram"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://github.com/tbakerx"
+          >
+            <i
+              className="fa fa-github"
+            />
+          </a>
+        </li>
+      </ul>
+      <ul
+        className="copyright"
+      >
+        <li>
+          © Copyright 2021 WouterObs
+        </li>
+        <li>
+          Design by
+           
+          <a
+            href="http://www.styleshout.com/"
+            title="Styleshout"
+          >
+            Styleshout
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      id="go-top"
+    >
+      <a
+        className="smoothscroll"
+        href="#home"
+        title="Back to Top"
+      >
+        <i
+          className="icon-up-open"
+        />
+      </a>
+    </div>
+  </div>
+</footer>
+`;
+
 exports[`Storyshots Resume Sections About 1`] = `
 Array [
   <section
@@ -428,6 +823,32 @@ exports[`Storyshots Wakatime | Embeddable Charts EmbededChartsGroup 1`] = `
     </figure>
   </div>
 </section>
+`;
+
+exports[`Storyshots Wakatime | Embeddable Charts/SVG/Bar Charts EmbededCodeActivitySVG 1`] = `
+<div
+  className="sc-jSFjdj hmZSjW"
+  id="fig-activity"
+>
+  <figure>
+    <embed
+      src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/81837c0b-239c-4d35-b9a1-39d049d584ef.svg"
+    />
+  </figure>
+</div>
+`;
+
+exports[`Storyshots Wakatime | Embeddable Charts/SVG/Wheel Charts EmbededLanguagesSVG 1`] = `
+<div
+  className="sc-gKAaRy ciWnRS"
+  id="fig-languages"
+>
+  <figure>
+    <embed
+      src="https://wakatime.com/share/@f9a50cc3-d943-43eb-b5de-ccf0cba671b0/63dda626-1e81-4f44-bda3-23714d4c33ed.svg"
+    />
+  </figure>
+</div>
 `;
 
 exports[`Storyshots Wakatime Embeddable Charts | SVGs | Bar Charts EmbededCodeActivitySVG 1`] = `
